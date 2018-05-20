@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Average Seasonal Snowfall</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d9e4d3fa-62e6-4844-aa55-ca6d12d1b4cd"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"70bf705e-5751-4908-a437-fd555089030e":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"408f561b-ea2e-4894-ac97-7ebdbec3fb1e","subtype":"Figure","type":"Plot"},"ticker":{"id":"63fefd86-819c-4fea-b7c8-044be5cd9796","type":"BasicTicker"}},"id":"1adf0be1-e1e2-4bbe-b859-d9d5936780c7","type":"Grid"},{"attributes":{},"id":"63fefd86-819c-4fea-b7c8-044be5cd9796","type":"BasicTicker"},{"attributes":{},"id":"f2b5e574-9b46-4344-b4bd-593a68e14c7b","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"408f561b-ea2e-4894-ac97-7ebdbec3fb1e","subtype":"Figure","type":"Plot"}},"id":"14b53cdb-571b-45e9-a95e-672b951e71ad","type":"SaveTool"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"408f561b-ea2e-4894-ac97-7ebdbec3fb1e","subtype":"Figure","type":"Plot"},"ticker":{"id":"c34ff178-7166-4470-b221-75f9b51a2c85","type":"CategoricalTicker"}},"id":"045d0c6b-e222-4a1e-8149-47bf1eaa5b5c","type":"Grid"},{"attributes":{},"id":"c34ff178-7166-4470-b221-75f9b51a2c85","type":"CategoricalTicker"},{"attributes":{"callback":null,"end":70},"id":"4e7709c5-da73-4a5c-b356-bad76531ace0","type":"Range1d"},{"attributes":{"axis_label":"City","formatter":{"id":"f2b5e574-9b46-4344-b4bd-593a68e14c7b","type":"CategoricalTickFormatter"},"plot":{"id":"408f561b-ea2e-4894-ac97-7ebdbec3fb1e","subtype":"Figure","type":"Plot"},"ticker":{"id":"c34ff178-7166-4470-b221-75f9b51a2c85","type":"CategoricalTicker"}},"id":"78ceaca7-4ec0-4a80-8edf-1d80b053dd6b","type":"CategoricalAxis"},{"attributes":{"axis_label":"Avg Snowfall (in)","formatter":{"id":"7f07d0c5-451d-4399-a01c-7af72f211b72","type":"BasicTickFormatter"},"plot":{"id":"408f561b-ea2e-4894-ac97-7ebdbec3fb1e","subtype":"Figure","type":"Plot"},"ticker":{"id":"63fefd86-819c-4fea-b7c8-044be5cd9796","type":"BasicTicker"}},"id":"21b8504e-ed9f-4715-808d-1cca2d71d3b4","type":"LinearAxis"},{"attributes":{},"id":"503faef2-bab8-45f9-87fd-12d34a4ebc13","type":"ToolEvents"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"14b53cdb-571b-45e9-a95e-672b951e71ad","type":"SaveTool"}]},"id":"b30e34fe-47ea-47cf-9264-9d63af5d46a8","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Boston","Hartford","Milton","Providence","Worcester"]},"id":"21c81eb7-2cc4-4705-888f-641836c752ec","type":"FactorRange"},{"attributes":{"below":[{"id":"78ceaca7-4ec0-4a80-8edf-1d80b053dd6b","type":"CategoricalAxis"}],"left":[{"id":"21b8504e-ed9f-4715-808d-1cca2d71d3b4","type":"LinearAxis"}],"plot_height":350,"renderers":[{"id":"78ceaca7-4ec0-4a80-8edf-1d80b053dd6b","type":"CategoricalAxis"},{"id":"045d0c6b-e222-4a1e-8149-47bf1eaa5b5c","type":"Grid"},{"id":"21b8504e-ed9f-4715-808d-1cca2d71d3b4","type":"LinearAxis"},{"id":"1adf0be1-e1e2-4bbe-b859-d9d5936780c7","type":"Grid"},{"id":"27ebd5bd-6de8-4d10-8171-e4a56d788114","type":"GlyphRenderer"}],"title":{"id":"f1419dd0-1a1c-4e40-a292-c9478135b7a2","type":"Title"},"tool_events":{"id":"503faef2-bab8-45f9-87fd-12d34a4ebc13","type":"ToolEvents"},"toolbar":{"id":"b30e34fe-47ea-47cf-9264-9d63af5d46a8","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"21c81eb7-2cc4-4705-888f-641836c752ec","type":"FactorRange"},"y_range":{"id":"4e7709c5-da73-4a5c-b356-bad76531ace0","type":"Range1d"}},"id":"408f561b-ea2e-4894-ac97-7ebdbec3fb1e","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["x","top"],"data":{"top":[43.720512820512816,44.21862745098039,65.14920634920634,35.26226415094339,62.759183673469394],"x":["Boston","Hartford","Milton","Providence","Worcester"]}},"id":"5103fa15-b6c4-4426-87d1-a9db21324b40","type":"ColumnDataSource"},{"attributes":{"plot":null,"text":"Average Seasonal Snowfall"},"id":"f1419dd0-1a1c-4e40-a292-c9478135b7a2","type":"Title"},{"attributes":{},"id":"7f07d0c5-451d-4399-a01c-7af72f211b72","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"5103fa15-b6c4-4426-87d1-a9db21324b40","type":"ColumnDataSource"},"glyph":{"id":"76ff6cfd-a5f5-4eea-9bf0-ceae7ff80c9c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"99224e57-15d3-4f6c-b982-b59fa51d29e3","type":"VBar"},"selection_glyph":null},"id":"27ebd5bd-6de8-4d10-8171-e4a56d788114","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.75},"x":{"field":"x"}},"id":"99224e57-15d3-4f6c-b982-b59fa51d29e3","type":"VBar"},{"attributes":{"fill_color":{"value":"#6baed6"},"line_color":{"value":"#6baed6"},"top":{"field":"top"},"width":{"value":0.75},"x":{"field":"x"}},"id":"76ff6cfd-a5f5-4eea-9bf0-ceae7ff80c9c","type":"VBar"}],"root_ids":["408f561b-ea2e-4894-ac97-7ebdbec3fb1e"]},"title":"Bokeh Application","version":"0.12.5"}};
+              var render_items = [{"docid":"70bf705e-5751-4908-a437-fd555089030e","elementid":"d9e4d3fa-62e6-4844-aa55-ca6d12d1b4cd","modelid":"408f561b-ea2e-4894-ac97-7ebdbec3fb1e"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Average Snowfall Before New Year</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2de01bbd-e7c7-4c7f-87c0-fa2aa272b5c9"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"f7791c67-f0e3-4b9f-a43d-d0462e13d74f":{"roots":{"references":[{"attributes":{},"id":"c4a53e55-ac36-4b19-89ba-1ef8758dbcb8","type":"ToolEvents"},{"attributes":{"plot":{"id":"724543d0-d2be-4563-9a5f-cd95a1f433eb","subtype":"Figure","type":"Plot"}},"id":"84d5904d-a2c3-4a62-a181-efed14f26f9d","type":"SaveTool"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"84d5904d-a2c3-4a62-a181-efed14f26f9d","type":"SaveTool"}]},"id":"d9cc00a1-09ab-4dc7-af57-2f4f76698548","type":"Toolbar"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"724543d0-d2be-4563-9a5f-cd95a1f433eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"52276bd6-5988-4d70-880f-6acd6e4d7172","type":"CategoricalTicker"}},"id":"45d3a7c4-6f1d-4e8d-91c7-8286f79d6a1b","type":"Grid"},{"attributes":{"below":[{"id":"f6e7ad1d-e7cb-4bad-a521-ff973bd6035e","type":"CategoricalAxis"}],"left":[{"id":"7948c137-7931-4f9b-9c47-d6a62f94d919","type":"LinearAxis"}],"plot_height":350,"renderers":[{"id":"f6e7ad1d-e7cb-4bad-a521-ff973bd6035e","type":"CategoricalAxis"},{"id":"45d3a7c4-6f1d-4e8d-91c7-8286f79d6a1b","type":"Grid"},{"id":"7948c137-7931-4f9b-9c47-d6a62f94d919","type":"LinearAxis"},{"id":"707e1b94-019b-46b9-88c3-701814eb5431","type":"Grid"},{"id":"a1d018c1-1531-4186-9e24-33eeae6a9154","type":"GlyphRenderer"}],"title":{"id":"f369b98c-84e5-45c4-ad43-2bd3639a4643","type":"Title"},"tool_events":{"id":"c4a53e55-ac36-4b19-89ba-1ef8758dbcb8","type":"ToolEvents"},"toolbar":{"id":"d9cc00a1-09ab-4dc7-af57-2f4f76698548","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"ed50d75d-75a2-4207-8a08-ed3bcec2eb43","type":"FactorRange"},"y_range":{"id":"0f5e2347-157f-4a67-9175-a50667688a6c","type":"Range1d"}},"id":"724543d0-d2be-4563-9a5f-cd95a1f433eb","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"52276bd6-5988-4d70-880f-6acd6e4d7172","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"a53f2616-5505-4cf9-b5b7-8350f89a172a","type":"ColumnDataSource"},"glyph":{"id":"e591e3a3-17f4-45af-9600-c4a2eaf9614d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1e111c6b-e8a2-4cf3-9c06-15bc5a489317","type":"VBar"},"selection_glyph":null},"id":"a1d018c1-1531-4186-9e24-33eeae6a9154","type":"GlyphRenderer"},{"attributes":{},"id":"f72124fb-b1c7-4c83-a265-00bad626176b","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"724543d0-d2be-4563-9a5f-cd95a1f433eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"f72124fb-b1c7-4c83-a265-00bad626176b","type":"BasicTicker"}},"id":"707e1b94-019b-46b9-88c3-701814eb5431","type":"Grid"},{"attributes":{"callback":null,"column_names":["x","top"],"data":{"top":[8.880158730158731,10.665178571428571,13.7,7.480530973451325,13.457600000000005],"x":["Boston","Hartford","Milton","Providence","Worcester"]}},"id":"a53f2616-5505-4cf9-b5b7-8350f89a172a","type":"ColumnDataSource"},{"attributes":{"callback":null,"end":15},"id":"0f5e2347-157f-4a67-9175-a50667688a6c","type":"Range1d"},{"attributes":{"fill_color":{"value":"#31a354"},"line_color":{"value":"#31a354"},"top":{"field":"top"},"width":{"value":0.75},"x":{"field":"x"}},"id":"e591e3a3-17f4-45af-9600-c4a2eaf9614d","type":"VBar"},{"attributes":{"plot":null,"text":"Average Snowfall before New Year"},"id":"f369b98c-84e5-45c4-ad43-2bd3639a4643","type":"Title"},{"attributes":{"axis_label":"City","formatter":{"id":"a7d9cfc5-843f-45a3-a7fc-cc2df9088e5c","type":"CategoricalTickFormatter"},"plot":{"id":"724543d0-d2be-4563-9a5f-cd95a1f433eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"52276bd6-5988-4d70-880f-6acd6e4d7172","type":"CategoricalTicker"}},"id":"f6e7ad1d-e7cb-4bad-a521-ff973bd6035e","type":"CategoricalAxis"},{"attributes":{},"id":"00c41966-8bb9-432f-bbf4-33296bca90b6","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.75},"x":{"field":"x"}},"id":"1e111c6b-e8a2-4cf3-9c06-15bc5a489317","type":"VBar"},{"attributes":{},"id":"a7d9cfc5-843f-45a3-a7fc-cc2df9088e5c","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Boston","Hartford","Milton","Providence","Worcester"]},"id":"ed50d75d-75a2-4207-8a08-ed3bcec2eb43","type":"FactorRange"},{"attributes":{"axis_label":"Avg Snowfall (in)","formatter":{"id":"00c41966-8bb9-432f-bbf4-33296bca90b6","type":"BasicTickFormatter"},"plot":{"id":"724543d0-d2be-4563-9a5f-cd95a1f433eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"f72124fb-b1c7-4c83-a265-00bad626176b","type":"BasicTicker"}},"id":"7948c137-7931-4f9b-9c47-d6a62f94d919","type":"LinearAxis"}],"root_ids":["724543d0-d2be-4563-9a5f-cd95a1f433eb"]},"title":"Bokeh Application","version":"0.12.5"}};
+              var render_items = [{"docid":"f7791c67-f0e3-4b9f-a43d-d0462e13d74f","elementid":"2de01bbd-e7c7-4c7f-87c0-fa2aa272b5c9","modelid":"724543d0-d2be-4563-9a5f-cd95a1f433eb"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
